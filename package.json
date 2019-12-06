@@ -1,6 +1,9 @@
 {
   "name": "cypress_on_rails_example",
   "private": true,
+  "scripts": {
+    "test:open": "cypress open --project ./spec"
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",

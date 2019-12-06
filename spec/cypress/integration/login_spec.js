@@ -1,4 +1,8 @@
 describe("Login", function() {
+  beforeEach(() => {
+    cy.app("clean"); // have a look at cypress/app_commands/clean.rb
+  });
+
   it("works as expected", function() {
     cy.appFactories([["create", "user"]]);
 

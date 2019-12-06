@@ -1,3 +1,9 @@
+CypressOnRails::SmartFactoryWrapper.configure(
+  always_reload: !Rails.configuration.cache_classes,
+  factory: FactoryBot,
+  files: Dir['./test/factories.rb']
+) 
+
 Array.wrap(command_options).map do |factory_options|
   factory_method = factory_options.shift
   begin
